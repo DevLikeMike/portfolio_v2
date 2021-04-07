@@ -1,9 +1,26 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+// Component Imports
+import Header from "./components/navigation/Header";
+import Footer from "./components/Footer";
+import Landing from "./components/Landing";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <div className='App'>
-      <h1>Hello World</h1>
+      <Router>
+        <Header />
+        <main>
+          <Landing />
+          <About />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </Router>
     </div>
   );
 }
