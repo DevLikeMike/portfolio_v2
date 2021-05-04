@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Hamburger from "./Hamburger";
 import SideNav from "./SideNav";
+import Resume from "../../images/MichaelHall_Resume.pdf";
 
 const Header = () => {
   const [sideOpen, setSideOpen] = useState(false);
@@ -24,7 +24,9 @@ const Header = () => {
                 <a href='#about'>About Me</a>
               </li>
               <li className='drop-item flex flex-center'>
-                <a to='/'>Resume</a>
+                <a href={Resume} target='_blank' rel='noreferrer'>
+                  Resume
+                </a>
               </li>
             </ul>
           </li>

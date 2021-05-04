@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import AHB from "../images/AHBowtique_SS.png";
 import GF from "../images/GamerFacts_SS.png";
 import Quizup from "../images/QuizUp_SS.png";
+import chlaw from "../images/CHLaw_SS.png";
 
 const Projects = () => {
   useEffect(() => {
@@ -15,12 +16,59 @@ const Projects = () => {
       <h1>Projects</h1>
       <div
         className='projects__card flex'
+        data-aos='fade-left'
+        data-aos-once='true'
+        data-aos-duration='700'
+      >
+        <div className='card__img-container'>
+          <a
+            href='https://chlaw-gqegsw4xi-devlikemike.vercel.app/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <img src={chlaw} alt='AHBowtique' />
+          </a>
+        </div>
+        <div className='card__info flex col'>
+          <h3>Casey Hall Law</h3>
+          <p>
+            This site is a work in progress(as of May 4, 2021). This site is a
+            static site built using NextJs, ReactJs, SCSS, and is hosted using
+            Vercel. Eventually CHLaw will become the full site for this lawyer
+            in Kentucky, I felt as though it is a great oppurtunity to show my
+            developing skills as I continue to learn NextJs going forward.
+          </p>
+          <div className='btn-container flex jc-fs'>
+            <a
+              href='https://github.com/DevLikeMike/ch-law-next'
+              target='_blank'
+              rel='noreferrer'
+              className='iconButton'
+            >
+              <i className='fab fa-github fa-2x'></i>Github
+            </a>
+            <a
+              href='https://chlaw-gqegsw4xi-devlikemike.vercel.app/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <i className='fas fa-external-link-alt fa-2x'></i>Try it!
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className='projects__card flex'
         data-aos='fade-right'
         data-aos-once='true'
         data-aos-duration='700'
       >
         <div className='card__img-container'>
-          <a href='https://ahbowtique-ecom.herokuapp.com/'>
+          <a
+            href='https://ahbowtique-ecom.herokuapp.com/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <img src={AHB} alt='AHBowtique' />
           </a>
         </div>

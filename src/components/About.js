@@ -21,6 +21,7 @@ const About = () => {
           <span className='skill'>HTML</span>
           <span className='skill'>CSS</span>
           <span className='skill'>Javascript</span>
+          <span className='skill'>NextJs</span>
           <span className='skill'>ReactJs</span>
           <span className='skill'>NodeJs</span>
           <span className='skill'>MongoDB</span>

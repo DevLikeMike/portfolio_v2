@@ -17,6 +17,7 @@ function App() {
           <Landing />
           <About />
           <Projects />
+          <hr style={{ width: "95%", margin: "0 auto 1rem" }} />
           <Contact />
         </main>
         <Footer />
