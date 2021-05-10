@@ -34,9 +34,7 @@ const Projects = () => {
           <p>
             This site is a work in progress(as of May 4, 2021). This site is a
             static site built using NextJs, ReactJs, SCSS, and is hosted using
-            Vercel. Eventually CHLaw will become the full site for this lawyer
-            in Kentucky, I felt as though it is a great oppurtunity to show my
-            developing skills as I continue to learn NextJs going forward.
+            Vercel.
           </p>
           <div className='btn-container flex jc-fs'>
             <a
